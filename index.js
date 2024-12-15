@@ -5,6 +5,7 @@ const app = express();
 const user = require('./db/users');
 const product = require('./db/products');
 app.use(express.json());
+
 app.use(cors());
 
 app.post("/register", async (req, resp) => {
